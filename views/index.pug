@@ -1,0 +1,24 @@
+extends layout
+
+block logo  
+  div(class="")
+    span(class="blue") T
+    span(class="orange") L
+    span(class="green") D
+    span(class="red") R
+
+block subheader
+  h4(id="subtitle" class='') Sorry to see you go 👋
+
+block form
+  div(class="formDiv")
+    input(class='inputItem' type='text', placeholder='Email', name='email' value=`${email}`)
+    div(class="")
+    button(class='buttonItem btn' type='button' onclick="unsubscribe('" + email + "')") Unsubscribe
+
+block footer
+  div(id="privacy", class="text-center")
+    div(id="privacyDiv", class="text-center")
+      a(href="/") Privacy
+      a(href="/") Sponsor
+
